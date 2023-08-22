@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+#__next {
+  @apply h-full;
+}
+
+html {
+  @apply h-full;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +25,7 @@
 }
 
 body {
+  @apply h-full overflow-x-hidden;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
